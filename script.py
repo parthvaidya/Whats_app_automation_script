@@ -12,7 +12,7 @@ with open('sample.csv',"r") as f:
 driver=webdriver.Chrome("D:\\Whats app script\\chromedriver.exe")   # Selenium chromedriver path
 driver.get("https://web.whatsapp.com/")
 
-input("Enter any keyword after scanning QR code ")  
+input("Input with the QR code...: ")  
 
 for name in l:
     user = driver.find_element_by_xpath("//span[@title='{}']".format(name))
